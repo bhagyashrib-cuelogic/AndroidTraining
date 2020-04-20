@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="EditText_width">150dp</dimen>
-    <dimen name="EditText_height">50dp</dimen>
-    <dimen name="EditTextMargin_Left">70dp</dimen>
-    <dimen name="EditTextMargin_Top">30dp</dimen>
-    <dimen name="button_width">100dp</dimen>
-    <dimen name="button_height">50dp</dimen>
-</resources>

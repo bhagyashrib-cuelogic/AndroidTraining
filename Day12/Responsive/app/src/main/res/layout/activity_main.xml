@@ -9,31 +9,31 @@
 
     <EditText
         android:id="@+id/user_id"
-        android:layout_width="@dimen/EditText_width"
-        android:layout_height="@dimen/EditText_height"
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="@dimen/size_50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/EditTextMargin_Left"
+        android:layout_marginLeft="@dimen/margin_70dp"
 
         android:hint="@string/enter_user_id" />
 
     <EditText
         android:id="@+id/user_password"
-        android:layout_width="@dimen/EditText_width"
-        android:layout_height="@dimen/EditText_height"
+        android:layout_width="@dimen/size_150dp"
+        android:layout_height="@dimen/size_50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/EditTextMargin_Left"
+        android:layout_marginLeft="@dimen/margin_70dp"
         android:layout_below="@+id/user_id"
-        android:layout_marginTop="@dimen/EditTextMargin_Top"
+        android:layout_marginTop="@dimen/margin_30dp"
         android:layout_centerVertical="true"
         android:hint="@string/enter_password" />
 
     <Button
         android:id="@+id/btn_submit"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="@dimen/button_height"
-        android:layout_marginTop="@dimen/EditTextMargin_Top"
+        android:layout_width="@dimen/size_100dp"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_marginTop="@dimen/margin_30dp"
         android:layout_below="@+id/user_password"
-        android:layout_marginLeft="@dimen/EditTextMargin_Left"
+        android:layout_marginLeft="@dimen/margin_70dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/btn_submit"/>
