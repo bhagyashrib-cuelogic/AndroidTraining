@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/text_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_marginTop="@dimen/margin_100dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:textSize="@dimen/size_15sp"
+        android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+        android:hint="@string/full_name"/>
+
+    <EditText
+        android:id="@+id/text_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:textSize="@dimen/size_15sp"
+        android:layout_below="@+id/text_fullname"
+        android:hint="@string/password"
+        android:drawableRight="@drawable/password_icon"
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:inputType="textPassword" />
+
+
+    <EditText
+        android:id="@+id/text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_15dp"
+        android:layout_marginRight="@dimen/margin_15dp"
+        android:layout_below="@+id/text_password"
+        android:textSize="@dimen/size_15sp"
+        android:hint="@string/cell_phone"
+        android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+        android:inputType="phone" />
+
+
+
+    <EditText
+        android:id="@+id/text_country"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_below="@+id/text_phone"
+        android:textSize="@dimen/size_15sp"
+        android:drawableLeft="@drawable/ic_business_black_24dp"
+        android:hint="@string/country" />
+
+        <CheckBox
+            android:id="@+id/checkBox_agree"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_below="@id/text_country"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginLeft="@dimen/margin_20dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_country"
+            android:layout_marginTop="@dimen/margin_25dp"
+            android:layout_toRightOf="@+id/checkBox_agree"
+            android:textSize="@dimen/size_12sp"
+            android:text="Read PDY Fasthelp Membership Aggrement" />
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox_agree"
+            android:layout_margin="@dimen/margin_15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_button"
+            android:text="Agree  &amp; Create  Account" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:gravity="center"
+        android:textColor="@color/light_black"
+        android:text="Have an account?"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginBottom="@dimen/margin_10dp"
+       android:layout_marginLeft="@dimen/margin_420dp"
+       android:textColor="@color/black"
+       android:textStyle="bold"
+       android:text="Sign In"/>
+
+</RelativeLayout>
