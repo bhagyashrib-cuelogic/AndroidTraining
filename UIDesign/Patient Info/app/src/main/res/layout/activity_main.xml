@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/relative_one"
+       android:layout_marginTop="@dimen/margin_20dp">
+    <TextView
+        android:id="@+id/text_label"
+        android:text="@string/patient_s_details"
+        style="@style/text_style"/>
+
+       <TextView
+           android:id="@+id/text_fname"
+           android:layout_below="@+id/text_label"
+           android:drawableRight="@drawable/ic_fiber_manual_record_black_24dp"
+           android:text="@string/full_name"
+           style="@style/text1_style" />
+       <EditText
+           android:id="@+id/edit_fname"
+           android:layout_below="@+id/text_fname"
+           android:drawableLeft="@drawable/ic_person_black_24dp"
+           android:background="@drawable/edit_round"
+           style="@style/edit_style"
+           android:hint="@string/patient_s_full_name"/>
+
+       <TextView
+           android:id="@+id/text_phone"
+           android:layout_below="@+id/edit_fname"
+           android:drawableRight="@drawable/ic_fiber_manual_record_black_24dp"
+           android:text="@string/telephone_number"
+           style="@style/text1_style"/>
+       <EditText
+           android:id="@+id/edit_phone"
+           android:layout_below="@+id/text_phone"
+           android:drawableLeft="@drawable/ic_local_phone_red_24dp"
+           style="@style/edit_style"
+           android:background="@drawable/edit_round"
+           android:hint="@string/patient_s_phone_number"
+           android:inputType="phone"/>
+
+       <TextView
+           android:id="@+id/text_zipcode"
+           android:layout_below="@+id/edit_phone"
+           android:drawableRight="@drawable/ic_fiber_manual_record_black_24dp"
+           android:text="@string/zipcode"
+           style="@style/text1_style"/>
+       <EditText
+           android:id="@+id/edit_zipcode"
+           android:layout_below="@+id/text_zipcode"
+           android:drawableLeft="@drawable/ic_home_black_24dp"
+           android:background="@drawable/edit_round"
+           android:inputType="number"
+           style="@style/edit_style"
+           android:hint="@string/zipcode"/>
+
+       <TextView
+           android:id="@+id/text_telephone"
+           android:layout_below="@+id/edit_zipcode"
+           android:text="@string/alternate_contact_number"
+           style="@style/text1_style"/>
+       <EditText
+           android:id="@+id/edit_telephone"
+           android:layout_below="@+id/text_telephone"
+           android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+           android:background="@drawable/text_round"
+           style="@style/edit_style"
+           android:hint="@string/enter_your_alternate_contact_number"/>
+
+       <TextView
+           android:id="@+id/radio_location"
+           android:layout_below="@+id/edit_telephone"
+           android:text="@string/you_are"
+           style="@style/text1_style" />
+       <RadioGroup
+           android:id="@+id/RG1"
+           android:layout_below="@+id/radio_location"
+           style="@style/radio_style">
+
+           <RadioButton
+               android:id="@+id/G"
+               android:checked="true"
+               android:text="@string/goan"
+               style="@style/radiobutton_style" />
+
+           <RadioButton
+                android:id="@+id/GN"
+                android:text="@string/non_goan"
+                style="@style/radiobutton_style"/>
+
+           <RadioButton
+               android:id="@+id/F"
+               android:text="@string/foreigner"
+               style="@style/radiobutton_style" />
+       </RadioGroup>
+       <TextView
+           android:id="@+id/radio_language"
+           android:layout_below="@+id/RG1"
+           style="@style/text1_style"
+           android:text="@string/select_language" />
+       <RadioGroup
+           android:id="@+id/RG2"
+           android:layout_below="@+id/radio_language"
+           style="@style/radio_style">
+
+           <RadioButton
+               android:id="@+id/E"
+               android:checked="true"
+               android:text="@string/english"
+               style="@style/radiobutton_style" />
+
+           <RadioButton
+               android:id="@+id/Y"
+               android:text="@string/hindi"
+               style="@style/radiobutton_style"/>
+
+           <RadioButton
+               android:id="@+id/K"
+               android:text="@string/konkani"
+               style="@style/radiobutton_style"/>
+       </RadioGroup>
+   </RelativeLayout>
+    <Button
+        android:id="@+id/button_survey"
+        android:text="@string/begin_survey"
+        style="@style/button_style"/>
+</RelativeLayout>
