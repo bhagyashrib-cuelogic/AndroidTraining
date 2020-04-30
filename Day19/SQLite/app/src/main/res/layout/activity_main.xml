@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/text_fname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_marginTop="@dimen/margin_100dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:textSize="@dimen/size_15sp"
+            android:hint="@string/full_name"/>
+
+        <EditText
+            android:id="@+id/text_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:textSize="@dimen/size_15sp"
+            android:layout_below="@+id/text_fname"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+
+        <EditText
+            android:id="@+id/text_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginLeft="@dimen/margin_15dp"
+            android:layout_marginRight="@dimen/margin_15dp"
+            android:layout_below="@+id/text_password"
+            android:textSize="@dimen/size_15sp"
+            android:hint="@string/cell_phone"
+            android:inputType="phone" />
+
+
+
+        <EditText
+            android:id="@+id/text_country"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:layout_marginTop="@dimen/margin_15dp"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            android:layout_below="@+id/text_phone"
+            android:textSize="@dimen/size_15sp"
+            android:hint="@string/country" />
+
+
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_country"
+            android:layout_margin="@dimen/margin_15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:onClick="addData"
+            android:background="@drawable/rounded_button"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_submit"
+            android:layout_margin="@dimen/margin_15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:onClick="showData"
+            android:background="@drawable/rounded_button"
+            android:text="@string/show_data" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_view"
+            android:layout_margin="@dimen/margin_15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:onClick="deleteData"
+            android:background="@drawable/rounded_button"
+            android:text="@string/Delete" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
