@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/president_id"
+        android:textSize="15sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/president_name"
+        android:textSize="26sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/president_politic"
+        android:textSize="21sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/president_time"
+        android:textSize="25sp"/>
+
+</RelativeLayout>
