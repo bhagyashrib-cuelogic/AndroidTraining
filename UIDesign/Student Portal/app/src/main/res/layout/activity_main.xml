@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F7"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_labelName"
+        style="@style/textStyle"/>
+
+    <TableLayout
+        android:stretchColumns="@string/stretch_Column_01"
+        android:id="@+id/table_studentTable"
+        style="@style/tableStyle">
+
+    <TableRow
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:text="@string/profile"
+            android:elevation="@dimen/elevation_10dp"
+            android:layout_marginRight="@dimen/margin_20dp"
+            style="@style/boxDesign"
+            android:drawableTop="@drawable/profile_24dp" />
+        <TextView
+            android:elevation="@dimen/elevation_10dp"
+            style="@style/boxDesign"
+            android:text="@string/events"
+            android:drawableTop="@drawable/ic_event_note_black_24dp" />
+    </TableRow>
+
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <TextView
+                android:text="@string/staffs"
+                android:elevation="@dimen/elevation_10dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                style="@style/boxDesign"
+                android:drawableTop="@drawable/ic_people_black_24dp" />
+            <TextView
+                android:text="@string/attendence"
+                android:elevation="@dimen/elevation_10dp"
+                style="@style/boxDesign"
+                android:drawableTop="@drawable/ic_playlist_add_check_black_24dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <TextView
+                android:text="@string/chatbox"
+                android:elevation="@dimen/elevation_10dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                style="@style/boxDesign"
+                android:drawableTop="@drawable/ic_chat_black_24dp" />
+            <TextView
+                android:elevation="@dimen/elevation_10dp"
+                android:text="@string/gradeheet"
+                style="@style/boxDesign"
+                android:drawableTop="@drawable/ic_assessment_black_24dp"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <TextView
+                android:text="@string/gallery"
+                android:elevation="@dimen/elevation_10dp"
+                android:layout_marginRight="@dimen/margin_20dp"
+                style="@style/boxDesign"
+                android:drawableTop="@drawable/ic_photo_size_select_actual_black_24dp" />
+            <TextView
+                android:text="@string/fees_details"
+                android:elevation="@dimen/elevation_10dp"
+                style="@style/boxDesign"
+                android:drawableTop="@drawable/ic_attach_money_black_24dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

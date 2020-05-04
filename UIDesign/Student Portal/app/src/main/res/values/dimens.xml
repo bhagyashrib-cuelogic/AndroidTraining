@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="size_0dp">0dp</dimen>
+    <dimen name="elevation_10dp">10dp</dimen>
+    <dimen name="textSize_15sp">15sp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
+    <dimen name="size_4dp">4dp</dimen>
+    <dimen name="radius_6dp">6dp</dimen>
+    <dimen name="size_0dp">0dp</dimen>
+    <item name="size_05dp" type="dimen" format="float">0.5dp</item>
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Patient Details</string>
+    <string name="patient_s_details">Patient\'s Details</string>
+    <string name="full_name">Full Name</string>
+    <string name="patient_s_full_name">Patient\'s Full Name</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="patient_s_phone_number">Patient\'s Phone Number</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="alternate_contact_number">Alternate Contact Number</string>
+    <string name="enter_your_alternate_contact_number">Enter your alternate contact number</string>
+    <string name="you_are">You are:</string>
+    <string name="goan">Goan</string>
+    <string name="foreigner">Foreigner</string>
+    <string name="non_goan">Non-Goan</string>
+    <string name="select_language">Select Language:</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="konkani">Konkani</string>
+    <string name="begin_survey">Begin Survey</string>
+</resources>
