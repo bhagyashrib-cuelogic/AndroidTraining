@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="@dimen/margin_20dp"
+      android:id="@+id/relative_one">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="@dimen/margin_20dp"
+          android:id="@+id/text_contacts"
+          android:textColor="@color/black"
+          android:textSize="@dimen/textsize_20sp"
+          android:text="Contacts"/>
+
+   <EditText
+       android:id="@+id/edit_firstName"
+       android:layout_below="@+id/text_contacts"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="@dimen/margin_20dp"
+       android:layout_marginTop="@dimen/margin_20dp"
+       android:layout_marginRight="@dimen/margin_20dp"
+       android:hint="@string/enter_first_name"
+       android:textColor="@color/blackLight"
+       android:textSize="@dimen/textSize_15sp" />
+
+      <EditText
+          android:layout_below="@+id/edit_firstName"
+          android:id="@+id/edit_lastName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/margin_20dp"
+          android:layout_marginTop="@dimen/margin_20dp"
+          android:layout_marginRight="@dimen/margin_20dp"
+          android:hint="@string/enter_last_name"
+          android:textColor="@color/Black"
+          android:textSize="@dimen/textSize_15sp" />
+
+      <EditText
+          android:layout_below="@+id/edit_lastName"
+          android:id="@+id/edit_phone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/margin_20dp"
+          android:layout_marginTop="@dimen/margin_20dp"
+          android:layout_marginRight="@dimen/margin_20dp"
+          android:hint="@string/enter_contact_number"
+          android:textColor="@color/black"
+          android:inputType="phone"
+          android:textSize="@dimen/textSize_15sp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edit_phone"
+          android:layout_marginRight="@dimen/margin_20dp"
+          android:layout_marginTop="@dimen/margin_50dp"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/layout_linear"
+          android:layout_marginLeft="@dimen/margin_20dp">
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Save"
+             android:id="@+id/button_save"/>
+<!--        android:onClick="addContacts"-->
+
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/button_show"
+             android:text="@string/show"
+             android:layout_marginLeft="@dimen/margin_30dp"/>
+<!--             android:onClick="viewContacts"-->
+      </LinearLayout>
+   </RelativeLayout>
+
+</RelativeLayout>
