@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Student Portal</string>
+    <string name="stretch_Column_01">0,1</string>
+    <string name="student_portal">STUDENT PORTAL</string>
+    <string name="profile">Profile</string>
+    <string name="events">Events</string>
+    <string name="staffs">STAFFS</string>
+    <string name="attendence">Attendence</string>
+    <string name="chatbox">CHATBOX</string>
+    <string name="gradeheet">Gradeheet</string>
+    <string name="gallery">Gallery</string>
+    <string name="fees_details">Fees details</string>
+</resources>

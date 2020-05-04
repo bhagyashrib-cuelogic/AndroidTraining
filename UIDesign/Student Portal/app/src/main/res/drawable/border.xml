@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle">
+
+
+
+    <item >
+        <shape android:shape="rectangle">
+            <!-- set the shadow color here -->
+            <stroke
+                android:width="@dimen/size_5dp"
+                android:color="@color/gray" />
+
+            <!-- setting the thickness of shadow (positive value will give shadow on that side) -->
+
+            <!--Set shadow width as per your requirement -->
+            <padding
+                android:bottom="@dimen/size_4dp"
+                android:left="@dimen/size_4dp"
+                android:right="@dimen/size_4dp"
+                android:top="@dimen/size_05dp" />
+            <corners android:radius="@dimen/radius_6dp" />
+        </shape>
+    </item>
+
+    <!--White Background -->
+    <item
+         android:left="@dimen/size_0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="@dimen/radius_6dp" />
+        </shape>
+    </item>
+
+</layer-list>
