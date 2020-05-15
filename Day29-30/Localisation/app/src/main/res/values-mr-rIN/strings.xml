@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Localisation</string>
+    <string name="name_text_hint">आपले नांव लिहा</string>
+    <string name="selected_language">मराठी</string>
+    <string name="greetings_message">सर्वांचे स्वागत आहे</string>
+    <string name="button_label">प्रस्तुत करणे</string>
+</resources>

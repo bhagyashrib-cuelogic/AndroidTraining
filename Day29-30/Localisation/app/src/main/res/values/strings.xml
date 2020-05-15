@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Localisation</string>
+    <string name="name_text_hint">Enter Your Name</string>
+    <string name="selected_language">English</string>
+    <string name="greetings_message">Welcome All</string>
+    <string name="button_label">Submit</string>
+</resources>

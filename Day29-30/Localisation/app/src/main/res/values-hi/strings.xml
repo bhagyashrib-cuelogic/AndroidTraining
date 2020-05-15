@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Localisation</string>
+    <string name="name_text_hint">अपना नाम दर्ज करें</string>
+    <string name="selected_language">हिन्दी</string>
+    <string name="greetings_message">सभी का स्वागत</string>
+    <string name="button_label">प्रस्तुत</string>
+
+</resources>
